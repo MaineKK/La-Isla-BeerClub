@@ -22,6 +22,7 @@ const beerData = {
     { name: "Verna", price: "2.50€" },
     { name: "Estrella Galicia 0,0 Tostada", price: "2.50€" },
     { name: "Clausthaler Rubia / Tostada", price: "3.00€" },
+    { name: "Yakka Blonde - Sin Gluten", price: "3.50€" },
   ]
 };
 
@@ -50,7 +51,7 @@ const BeerSection: React.FC = () => {
           ))}
         </ul>
         <div className="flex justify-end w-full mt-4">
-          <span className="text-m text-[#432416] font-bold">
+          <span className="text-m text-gray-600 font-bold">
             * Grifos rotativos, preguntar al personal
           </span>
         </div>
