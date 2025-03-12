@@ -28,41 +28,41 @@ const beerData = {
 
 const BeerSection: React.FC = () => {
   return (
-    <div className="">
+    <div className="px-4">
       {/* Grifos */}
       <div className="mb-6">
-        <div className="flex justify-between items-center border-b">
+        <div className="flex justify-between items-center border-b pb-2">
           <h3 className="text-2xl font-bold text-[#432416]">Grifos</h3>
           <p className="text-lg font-semibold text-[#432416]">1/2 pinta - 1 pinta</p>
         </div>
         <ul className="mt-4 space-y-2">
           {beerData["Grifos"].map((item, index) => (
-            <li key={index} className="text-[#432416] font-semibold text-lg">
-              <div className="flex justify-between">
-                <span>
-                  {item.name}{" "}
-                  <i className="text-sm text-gray-600">
-                    ({item.type} - {item.abv})
-                  </i>
-                </span>
-                <span>{item.half} / {item.full}</span>
+            <li key={index} className="text-[#432416] font-semibold text-lg border-b pb-2">
+              <div className="grid grid-cols-3 gap-2 items-center">
+                <div className="col-span-2">
+                  <span>{item.name}</span>
+                  {item.type && (
+                    <i className="text-sm text-gray-600"> ({item.type} {item.abv && `- ${item.abv}`})</i>
+                  )}
+                </div>
+                <div className="text-right">
+                  <span>{item.half} / {item.full}</span>
+                </div>
               </div>
             </li>
           ))}
         </ul>
-        <div className="flex justify-end w-full mt-4">
-          <span className="text-m text-gray-600 font-bold">
-            * Grifos rotativos, preguntar al personal
-          </span>
+        <div className="text-right mt-4">
+          <span className="text-sm text-gray-600 font-bold">* Grifos rotativos, preguntar al personal</span>
         </div>
       </div>
 
       {/* Tercios */}
       <div className="mt-8 mb-24">
-        <h4 className="text-2xl font-bold text-[#432416] border-b">Tercios</h4>
+        <h4 className="text-2xl font-bold text-[#432416] border-b pb-2">Tercios</h4>
         <ul className="mt-4 space-y-2">
           {beerData["Tercios"].map((bottle, index) => (
-            <li key={index} className="text-[#432416] font-semibold text-lg">
+            <li key={index} className="text-[#432416] font-semibold text-lg border-b pb-2">
               <div className="flex justify-between">
                 <span>{bottle.name}</span>
                 <span>{bottle.price}</span>
@@ -76,6 +76,3 @@ const BeerSection: React.FC = () => {
 };
 
 export default BeerSection;
-
-
-

@@ -8,7 +8,7 @@ const Map = dynamic(() => import("./map"), { ssr: false });
 
 export default function Localizacion() {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center bg-[#EAD7C5]">
+    <div className="min-h-screen w-full flex flex-col items-center bg-[#d1af95]">
       <NavBar />
 
       

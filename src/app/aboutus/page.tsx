@@ -13,7 +13,7 @@ const images = [
 
 export default function AboutUs() {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center bg-[#EAD7C5]">
+    <div className="min-h-screen w-full flex flex-col items-center bg-[#d1af95]">
       <NavBar />
 
       <div className="relative w-full max-w-5xl mt-18 px-6 py-28 text-center bg-[#b59b83] rounded-xl shadow-lg overflow-hidden min-h-[1350px]">
