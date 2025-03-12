@@ -17,7 +17,7 @@ const menuItems = [
 
 export default function MenuSection() {
   const [selectedCategory, setSelectedCategory] = useState("Cerveza");
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
 
   return (
     <section id="menu-section" className="bg-white mb-8 min-h-[500px]">

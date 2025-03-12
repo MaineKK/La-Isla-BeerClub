@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Navbar from "./NavBar";
 import MenuSection from "./MenuSection";
 
