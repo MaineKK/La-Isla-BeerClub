@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import { LoadScript } from "@react-google-maps/api";
 import NavBar from "../NavBar";
 
 const Map = dynamic(() => import("./map"), { ssr: false });
@@ -11,7 +12,6 @@ export default function Localizacion() {
     <div className="min-h-screen w-full flex flex-col items-center bg-[#d1af95]">
       <NavBar />
 
-      
       <div className="w-full flex flex-col items-center bg-[#EAD7C5] pt-10 pb-20">
         <div className="relative w-full max-w-6xl mx-4 px-8 py-28 text-center bg-[#b59b83] rounded-xl shadow-lg overflow-hidden min-h-[1350px]">
           <div className="absolute inset-0 w-full h-full">
@@ -24,20 +24,21 @@ export default function Localizacion() {
             />
           </div>
 
-          
           <h1 className="text-3xl mt-12 font-serif font-bold text-[#e0bea9] mb-16 relative z-10">
-            Donde y cuando puedes encontrarnos
+            Dónde y cuándo puedes encontrarnos
           </h1>
           <p className="text-lg text-[#7f5749] mb-12 relative z-10">
             Encuéntranos fácilmente en Google Maps.
           </p>
 
-          {/* Mapa */}
-          <div className="relative flex justify-center mt-36 z-10">
-            <div className="w-full max-w-3xl h-96">
-              <Map />
+          {/* Mapa con LoadScript aquí */}
+          <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}>
+            <div className="relative flex justify-center mt-36 z-10">
+              <div className="w-full max-w-3xl h-96">
+                <Map />
+              </div>
             </div>
-          </div>
+          </LoadScript>
 
           {/* Horarios */}
           <div className="mt-20 text-lg text-[#5C3B28] text-center relative z-10">
@@ -46,7 +47,7 @@ export default function Localizacion() {
             <p>Viernes: 10:00 - 02:00</p>
             <p>Sábado: 12:00 - 02:00</p>
             <p>Domingo: 16:00 - 00:00</p>
-            <p>*Los festivos y visperas de festivo sujeto a cambios</p>
+            <p>*Los festivos y vísperas de festivo sujeto a cambios</p>
           </div>
         </div>
       </div>

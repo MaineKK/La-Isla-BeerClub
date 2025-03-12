@@ -35,17 +35,17 @@ const BeerSection: React.FC = () => {
           <h3 className="text-2xl font-bold text-[#432416]">Grifos</h3>
           <p className="text-lg font-semibold text-[#432416]">1/2 pinta - 1 pinta</p>
         </div>
-        <ul className="mt-4 space-y-2">
+        <ul className="mt-4 space-y-4">
           {beerData["Grifos"].map((item, index) => (
-            <li key={index} className="text-[#432416] font-semibold text-lg border-b pb-2">
-              <div className="grid grid-cols-3 gap-2 items-center">
-                <div className="col-span-2">
-                  <span>{item.name}</span>
+            <li key={index} className="text-[#432416] font-semibold text-lg border-b pb-4">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+                <div>
+                  <span className="block text-xl font-bold">{item.name}</span>
                   {item.type && (
-                    <i className="text-sm text-gray-600"> ({item.type} {item.abv && `- ${item.abv}`})</i>
+                    <span className="block text-sm text-gray-600">{item.type} {item.abv && `- ${item.abv}`}</span>
                   )}
                 </div>
-                <div className="text-right">
+                <div className="text-right text-lg font-semibold">
                   <span>{item.half} / {item.full}</span>
                 </div>
               </div>

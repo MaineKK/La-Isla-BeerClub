@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import { GoogleMap, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
   width: "100%",
@@ -17,15 +17,13 @@ export default function Map() {
   const [map, setMap] = useState<google.maps.Map | null>(null);
 
   return (
-    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}>
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={15}
-        onLoad={(mapInstance) => setMap(mapInstance)} 
-      >
-        {map && <Marker position={center} />} 
-      </GoogleMap>
-    </LoadScript>
+    <GoogleMap
+      mapContainerStyle={containerStyle}
+      center={center}
+      zoom={15}
+      onLoad={(mapInstance) => setMap(mapInstance)} 
+    >
+      {map && <Marker position={center} />} 
+    </GoogleMap>
   );
 }

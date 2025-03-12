@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="w-full bg-[#432416] text-white fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex space-x-4">
+          <div className="flex space-x-3 sm:space-x-8">
             {[
               { name: "Nosotros", href: "/aboutus" },
               { name: "Carta", href: "/#menu-section" }, 
@@ -16,7 +16,7 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 scroll={false}
-                className="px-4 py-2 border border-white text-white rounded-full bg-white bg-opacity-20 hover:bg-opacity-50 transition-opacity"
+                className="text-base px-4 py-2 sm:text-lg sm:px-5 md:py-2.5 border border-white text-white rounded-full bg-white bg-opacity-20 hover:bg-opacity-50 transition-opacity"
               >
                 {item.name}
               </Link>
@@ -47,3 +47,4 @@ export default function Navbar() {
     </nav>
   );
 }
+
