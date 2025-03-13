@@ -38,17 +38,15 @@ const BeerSection: React.FC = () => {
         <ul className="mt-4 space-y-4">
           {beerData["Grifos"].map((item, index) => (
             <li key={index} className="text-[#432416] font-semibold text-lg border-b pb-4">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-                <div>
-                  <span className="block text-xl font-bold">{item.name}</span>
-                  {item.type && (
-                    <span className="block text-sm text-gray-600">{item.type} {item.abv && `- ${item.abv}`}</span>
-                  )}
-                </div>
-                <div className="text-right text-lg font-semibold">
-                  <span>{item.half} / {item.full}</span>
-                </div>
+              <div className="flex justify-between items-center">
+                {/* Nombre y precio en la misma línea */}
+                <span className="text-xl font-bold">{item.name}</span>
+                <span className="text-lg font-semibold">{item.half} / {item.full}</span>
               </div>
+              {/* Tipo y ABV en una segunda línea más sutil */}
+              {item.type && (
+                <span className="block text-sm text-gray-600">{item.type} {item.abv && `- ${item.abv}`}</span>
+              )}
             </li>
           ))}
         </ul>

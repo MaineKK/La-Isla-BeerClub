@@ -6,6 +6,7 @@ import CafeSection from "./CafeSection";
 import PicoteoSection from "./PicoteoSection";
 import CopasSection from "./CopasSection";
 import OtrosSection from "./OtrosSection";
+import BreakfastSection from "./BreakfastSection";
 
 const menuItems = [
   { name: "Cerveza", image: "/images/yakka.png" },
@@ -13,6 +14,7 @@ const menuItems = [
   { name: "Picoteo", image: "/images/tapas2.png" },
   { name: "Copas", image: "/images/copas.jpeg" },
   { name: "Otros", image: "/images/vermut.png" },
+  { name: "Desayunos", image: "/images/tostada2.jpeg" }
 ];
 
 export default function MenuSection() {
@@ -64,6 +66,7 @@ export default function MenuSection() {
         {selectedCategory === "Picoteo" && <PicoteoSection />}
         {selectedCategory === "Copas" && <CopasSection />}
         {selectedCategory === "Otros" && <OtrosSection />}
+        {selectedCategory === "Desayunos" && <BreakfastSection />} 
       </div>
     </section>
   );

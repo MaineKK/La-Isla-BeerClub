@@ -2,7 +2,6 @@
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { LoadScript } from "@react-google-maps/api";
 import NavBar from "../NavBar";
 
 const Map = dynamic(() => import("./map"), { ssr: false });
@@ -31,14 +30,12 @@ export default function Localizacion() {
             Encuéntranos fácilmente en Google Maps.
           </p>
 
-          {/* Mapa con LoadScript aquí */}
-          <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}>
-            <div className="relative flex justify-center mt-36 z-10">
-              <div className="w-full max-w-3xl h-96">
-                <Map />
-              </div>
+          {/* Mapa */}
+          <div className="relative flex justify-center mt-36 z-10">
+            <div className="w-full max-w-3xl h-96">
+              <Map />
             </div>
-          </LoadScript>
+          </div>
 
           {/* Horarios */}
           <div className="mt-20 text-lg text-[#5C3B28] text-center relative z-10">
