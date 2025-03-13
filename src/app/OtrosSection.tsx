@@ -31,7 +31,7 @@ const OtrosSection = () => {
   };
 
   return (
-    <div className="mt-10 transition-opacity duration-300 mb-8 min-h-[500px]">
+    <div className="mt-10 transition-opacity duration-300 mb-24 min-h-[500px]">
       {/* Vermut y Vinos */}
       <div className="mt-4">
         <h3 className="text-2xl font-bold text-[#432416] border-b">Vermut y Vinos</h3>
