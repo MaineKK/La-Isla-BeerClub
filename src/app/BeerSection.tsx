@@ -10,9 +10,9 @@ const beerData = {
     { name: "Yakka Tostada", type: "*", abv: "", half: "2.50€", full: "4.50€" },
     { name: "Chouffe Blonde", type: "Belgian Ale", abv: "8%", half: "3.00€", full: "5.50€" },
     { name: "Chouffe Cherry", type: "Fruit Beer", abv: "8%", half: "3.00€", full: "5.50€" },
-    { name: "Weihenstephaner Vitus", type: "Weissbier", abv: "7.7%", half: "3.00€", full: "5.00€" },
+    { name: "Vitus", type: "Weissbier", abv: "7.7%", half: "3.00€", full: "5.00€" },
     { name: "Delirium Tremens", type: "Strong Ale", abv: "8.5%", half: "3.00€", full: "5.50€" },
-    { name: "Grifo Artesanal Rotativo", type: "*", abv: "", half: "3.50€", full: "6.50€" },
+    { name: "Grifo Artesanal", type: "*", abv: "", half: "3.50€", full: "6.50€" },
   ],
   "Tercios": [
     { name: "Estrella Galicia", price: "2.00€" },
