@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Proyecto "La Isla BeerClub"
 
-## Getting Started
+La Isla BeerClub es la página web oficial de una cervecería ubicada en el centro de Murcia, especializada en cerveza artesanal y otros productos de alta calidad como café y otros productos selectos. La web proporciona una experiencia intuitiva y moderna para que los clientes puedan explorar la carta del local, conocer su historia y obtener información sobre su ubicación y horarios.
 
-First, run the development server:
+Este sitio web proporciona:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+📜 Carta digital con todos los productos del local y sus precios.
+📍 Ubicación y horarios con integración de Google Maps.
+📷 Galería de imágenes del local y sus productos.
+🏡 Historia del negocio y su filosofía.
+📱 Optimización móvil: La página está adaptada para visualizarse en dispositivos móviles a través de un código QR disponible en el local.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tecnologías Utilizadas:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Next.js + React (Framework y librería para el desarrollo web).
+TypeScript (Código más seguro y mantenible).
+Tailwind CSS (Estilos flexibles y modernos).
+Google Maps API (Ubicación interactiva del local).
+Vercel (Despliegue y hosting).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Desarrollado por Mara Kolesnikova
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Visita la página web https://laislabeerclub.es
