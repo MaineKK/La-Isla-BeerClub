@@ -5,9 +5,13 @@ La Isla BeerClub es la página web oficial de una cervecería ubicada en el cent
 Este sitio web proporciona:
 
 📜 Carta digital con todos los productos del local y sus precios.
+
 📍 Ubicación y horarios con integración de Google Maps.
+
 📷 Galería de imágenes del local y sus productos.
+
 🏡 Historia del negocio y su filosofía.
+
 📱 Optimización móvil: La página está adaptada para visualizarse en dispositivos móviles a través de un código QR disponible en el local.
 
 Tecnologías Utilizadas:
