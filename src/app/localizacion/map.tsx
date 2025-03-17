@@ -14,7 +14,7 @@ const center = {
 };
 
 export default function Map() {
-  const mapRef = useRef<HTMLDivElement | null>(null);
+  const mapRef = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<google.maps.Map | null>(null);
 
   useEffect(() => {
@@ -22,21 +22,38 @@ export default function Map() {
 
     const loader = new Loader({
       apiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY!,
-      version: "weekly",
+      version: "beta", 
+      libraries: ["marker"], 
     });
 
     loader.load().then(() => {
-      if (!mapRef.current) return; // Verifica nuevamente antes de continuar
-
-      if (typeof window !== "undefined" && window.google) {
-        const mapInstance = new google.maps.Map(mapRef.current, {
-          center,
-          zoom: 15,
-        });
-
-        new google.maps.Marker({ position: center, map: mapInstance });
-        setMap(mapInstance);
+      if (!window.google) {
+        console.error("Google Maps API no está disponible");
+        return;
       }
+
+      const { Map } = window.google.maps;
+      const { AdvancedMarkerElement } = window.google.maps.marker;
+
+      if (!AdvancedMarkerElement) {
+        console.error("AdvancedMarkerElement no está disponible");
+        return;
+      }
+
+      const mapInstance = new Map(mapRef.current!, {
+        center,
+        zoom: 15,
+        mapId: process.env.NEXT_PUBLIC_MAP_ID!,
+      });
+
+      new AdvancedMarkerElement({
+        position: center,
+        map: mapInstance,
+      });
+
+      setMap(mapInstance);
+    }).catch(error => {
+      console.error("Error cargando Google Maps API:", error);
     });
   }, []);
 
