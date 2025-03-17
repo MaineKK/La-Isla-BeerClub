@@ -14,7 +14,7 @@ const center = {
 };
 
 export default function Map() {
-  const mapRef = useRef<HTMLDivElement>(null);
+  const mapRef = useRef<HTMLDivElement | null>(null);
   const [map, setMap] = useState<google.maps.Map | null>(null);
 
   useEffect(() => {
@@ -26,13 +26,17 @@ export default function Map() {
     });
 
     loader.load().then(() => {
-      const google = window.google;
-      const mapInstance = new google.maps.Map(mapRef.current, {
-        center,
-        zoom: 15,
-      });
-      new google.maps.Marker({ position: center, map: mapInstance });
-      setMap(mapInstance);
+      if (!mapRef.current) return; // Verifica nuevamente antes de continuar
+
+      if (typeof window !== "undefined" && window.google) {
+        const mapInstance = new google.maps.Map(mapRef.current, {
+          center,
+          zoom: 15,
+        });
+
+        new google.maps.Marker({ position: center, map: mapInstance });
+        setMap(mapInstance);
+      }
     });
   }, []);
 
