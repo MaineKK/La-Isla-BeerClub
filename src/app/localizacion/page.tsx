@@ -15,7 +15,7 @@ export default function Localizacion() {
         <div className="relative w-full max-w-6xl mx-4 px-8 py-28 text-center bg-[#b59b83] rounded-xl shadow-lg overflow-hidden min-h-[1350px]">
           <div className="absolute inset-0 w-full h-full">
             <Image
-              src="/images/fondobg.png"
+              src="/images/fondonosotros.png"
               alt="Fondo decorativo"
               fill
               style={{ objectFit: "cover" }}
@@ -23,11 +23,11 @@ export default function Localizacion() {
             />
           </div>
 
-          <h1 className="text-3xl mt-12 font-serif font-bold text-[#e0bea9] mb-16 relative z-10">
+          <h1 className="text-3xl mt-6 font-serif font-bold text-[#e0bea9] mb-16 relative z-10">
             Dónde y cuándo puedes encontrarnos
           </h1>
           <p className="text-lg text-[#7f5749] mb-12 relative z-10">
-            Encuéntranos fácilmente en Google Maps.
+            
           </p>
 
           {/* Mapa */}
@@ -37,15 +37,20 @@ export default function Localizacion() {
             </div>
           </div>
 
-          {/* Horarios */}
-          <div className="mt-20 text-lg text-[#5C3B28] text-center relative z-10">
-            <h2 className="text-2xl font-bold text-[#432416] mb-2">Horarios*</h2>
-            <p>Lunes a Jueves: 10:00 - 01:00</p>
-            <p>Viernes: 10:00 - 02:00</p>
-            <p>Sábado: 12:00 - 02:00</p>
-            <p>Domingo: 16:00 - 00:00</p>
-            <p>*Los festivos y vísperas de festivo sujeto a cambios</p>
+          {/* Horarios con tarjeta blanca */}
+          <div className="mt-20 relative z-10 flex justify-center">
+            <div className="bg-white shadow-lg rounded-xl p-6 w-full max-w-md">
+              <h2 className="text-2xl font-bold text-[#432416] mb-4 text-center">Horarios*</h2>
+              <p className="text-[#5C3B28] text-lg text-center">Lunes a Jueves: 10:00 - 01:00</p>
+              <p className="text-[#5C3B28] text-lg text-center">Viernes: 10:00 - 02:00</p>
+              <p className="text-[#5C3B28] text-lg text-center">Sábado: 12:00 - 02:00</p>
+              <p className="text-[#5C3B28] text-lg text-center">Domingo: 16:00 - 00:00</p>
+              <p className="text-sm text-[#7f5749] text-center mt-2">
+                *Los festivos y vísperas de festivo están sujetos a cambios
+              </p>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
