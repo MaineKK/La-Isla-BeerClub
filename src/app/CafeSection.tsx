@@ -14,7 +14,7 @@ const CafeSection = () => {
     { name: "Carajillo", price: "2.00€" },
     { name: "Belmonte", price: "2.00€" },
     { name: "Asiático", price: "3.50€" },
-    { name: "*Extra hielo", price: "+ 0,10€" },
+  
   ];
 
   return (
