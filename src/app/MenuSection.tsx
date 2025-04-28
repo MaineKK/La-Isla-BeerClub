@@ -43,7 +43,7 @@ export default function MenuSection() {
           <button
             key={item.name}
             className={`flex flex-col items-center focus:outline-none transition-all duration-300 ${
-              selectedCategory === item.name ? "opacity-100 scale-110" : "opacity-70"
+              selectedCategory === item.name ? "opacity-100 scale-110" : "opacity-50"
             }`}
             onClick={() => startTransition(() => setSelectedCategory(item.name))}
           >
