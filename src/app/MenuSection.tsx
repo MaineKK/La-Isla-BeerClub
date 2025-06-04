@@ -27,7 +27,6 @@ export default function MenuSection() {
         <Image
           src="/images/portadablur2.png"
           alt="Portada"
-          layout="responsive"
           width={1000}
           height={400}
           className="w-full h-auto object-contain"
