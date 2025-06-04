@@ -10,7 +10,6 @@ const PicoteoSection = () => {
     "Papas con olivas - 2.50€",
     "Nachos con Guacamole - 3.00€",
     "Salchicha seca con almendras - 4.00€",
-    "Perrito caliente - 3.00€",
     "Queso y almendras - 4.50€"
   ];
 

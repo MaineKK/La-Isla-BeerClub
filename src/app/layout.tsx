@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'La Isla Beer Club',
-  description: 'Cerveza, vino y buen ambiente en el corazón de la ciudad.',
+  description: 'Cerveza, café y buen ambiente en el corazón de la ciudad.',
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
