@@ -25,7 +25,7 @@ export default function MenuSection() {
     <section id="menu-section" className="bg-white mb-8 min-h-[500px]">
       <div className="relative w-full">
         <Image
-          src="/images/portadablur2.png"
+          src="/images/portadafinal1.png"
           alt="Portada"
           width={1000}
           height={400}
