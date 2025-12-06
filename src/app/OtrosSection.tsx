@@ -10,7 +10,7 @@ const OtrosSection = () => {
     Sidras: [
       { name: "Rekorderling - Mango y Frambuesa", price: "4.00€" },
       { name: "EXNER - Sidra Artesanal", price: "4.50€" },
-      { name: "Ladrón de Manzanas", price: "3.00€" }
+      { name: "Ladrón de Manzanas", price: "3.50€" }
     ],
     Refrescos: [
       { name: "Agua", price: "1.00€" },
