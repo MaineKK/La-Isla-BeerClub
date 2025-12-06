@@ -15,7 +15,7 @@ const breakfastItems = [
       <div className="text-[#432416]">
         {/* Horario */}
         <h2 className="text-center text-xl font-bold mb-6">
-          Lunes - Viernes : 10:15h - 13:00h
+          Lunes - Viernes : 10:15h - 12:30h
         </h2>
   
         {/* Lista de desayunos */}

@@ -30,6 +30,8 @@ export default function MenuSection() {
           width={1000}
           height={400}
           className="w-full h-auto object-contain"
+
+
         />
         <div className="absolute bottom-0 left-0 w-full bg-[#522c25] font-serif text-white text-xl font-bold py-1 text-center">
           La Carta

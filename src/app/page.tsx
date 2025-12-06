@@ -1,5 +1,6 @@
 import Navbar from "./NavBar";
 import MenuSection from "./MenuSection";
+import MenuNewsPopup from "./MenuNewsPopup";
 
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
       <div className="w-full max-w-screen-xl">
         <MenuSection />
       </div>
+
+      <MenuNewsPopup />
     </main>
     </>
   );
