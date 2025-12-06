@@ -18,6 +18,7 @@ const beerData = {
     { name: "Estrella Galicia", price: "2.00€" },
     { name: "1906", price: "2.50€" },
     { name: "Alhambra Reserva", price: "3.00€" },
+    { name: "Rivera Reposada (Estrella Galicia)", price: "3.00€" },
     { name: "Águila Sin Filtrar", price: "3.00€" },
     { name: "Verna", price: "2.50€" },
     { name: "Estrella Galicia 0,0 Tostada", price: "2.50€" },
