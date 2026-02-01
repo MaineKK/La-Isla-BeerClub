@@ -21,7 +21,6 @@ const CafeSection = () => {
     "Té verde - 'Gunpowder'",
     "Té negro - 'English Breakfast",
     "Té chai - 'Pakistaní'",
-    "Té chino -  'Jazmín'",
     "Rooibos - 'Flor del Desierto'",
     "Infusión de Flor de Manzanilla",
     "Infusión de Poleo",
