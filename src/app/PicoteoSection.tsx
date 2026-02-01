@@ -2,14 +2,14 @@ import React from "react";
 
 const PicoteoSection = () => {
   const picoteoPrices = [
-    "Marinera - 2.00€",
-    "Bicicleta - 2.00€",
+    "Marinera - 2.50€",
+    "Bicicleta - 2.50€",
     "Papas fritas - 1.00€",
     "Aceitunas rellenas - 1.50€",
     "Almendras - 2.00€",
     "Papas con olivas - 2.50€",
     "Nachos con Guacamole - 3.00€",
-    "Salchicha seca con almendras - 4.00€",
+    "Salchicha seca con almendras - 4.50€",
     "Queso y almendras - 4.50€"
   ];
 

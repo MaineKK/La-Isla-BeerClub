@@ -2,8 +2,8 @@ import React from "react";
 
 const beerData = {
   "Grifos": [
-    { name: "Estrella Galicia", type: "Lager", abv: "5.5%", half: "1.50€", full: "2.50€" },
-    { name: "1906", type: "Lager", abv: "6.5%", half: "2.00€", full: "3.00€" },
+    { name: "Estrella Galicia", type: "Lager", abv: "5.5%", half: "1.80€", full: "2.80€" },
+    { name: "1906", type: "Lager", abv: "6.5%", half: "2.50€", full: "3.50€" },
     { name: "Blue Moon", type: "Belgian White Ale", abv: "5.4%", half: "2.50€", full: "4.50€" },
     { name: "Yakka IPA", type: "*", abv: "", half: "3.00€", full: "5.50€" },
     { name: "Yakka Negra", type: "*", abv: "", half: "3.00€", full: "5.50€" },
@@ -15,8 +15,8 @@ const beerData = {
     { name: "Grifo Artesanal", type: "*", abv: "", half: "3.50€", full: "6.50€" },
   ],
   "Tercios": [
-    { name: "Estrella Galicia", price: "2.00€" },
-    { name: "1906", price: "2.50€" },
+    { name: "Estrella Galicia", price: "2.50€" },
+    { name: "1906", price: "3.00€" },
     { name: "Alhambra Reserva", price: "3.00€" },
     { name: "Rivera Reposada (Estrella Galicia)", price: "3.00€" },
     { name: "Águila Sin Filtrar", price: "3.00€" },

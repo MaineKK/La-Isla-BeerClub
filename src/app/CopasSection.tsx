@@ -18,8 +18,8 @@ const copasData = {
       "Whiskies": ["Black Label", "Jack Daniel's", "Tomatin Legacy(Single Malt)"],
     }
   },
-  "Ron Zacapa 23": {
-    price: "10€",
+  "Whisky Macallan 12": {
+    price: "15€",
     categories: {
       "": [""]
     }

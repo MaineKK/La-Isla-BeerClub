@@ -3,12 +3,13 @@ import React from "react";
 const OtrosSection = () => {
   const categories = {
     VermutYVinos: [
-      { name: "Vermut - Yzaguirre", price: "3.00€" },
+      { name: "Vermut - Yzaguirre", price: "3.50€" },
       { name: "Vino Tinto - Monastrell/Syrah", price: "3.00€" },
       { name: "Vino Blanco - Verdejo", price: "3.00€" },
     ],
     Sidras: [
-      { name: "Rekorderling - Mango y Frambuesa", price: "4.00€" },
+      { name: "Rekorderling - Mango y Frambuesa", price: "4.50€" },
+      { name: "Strongbow - Sidra Inglesa", price: "4.50€" },
       { name: "EXNER - Sidra Artesanal", price: "4.50€" },
       { name: "Ladrón de Manzanas", price: "3.50€" }
     ],
